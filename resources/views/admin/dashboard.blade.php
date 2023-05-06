@@ -124,41 +124,26 @@
                     <!-- Layouts -->
                     <li class="menu-item">
                         <a href="{{ url('javascript:void(0);') }}" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-cog"></i>
+                            <i class="menu-icon tf-icons bx bx-qr"></i>
                             <div data-i18n="Layouts">Manager Produk</div>
                         </a>
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ url('layouts-without-menu.html') }}" class="menu-link">
-                                    <div data-i18n="Without menu">Without menu</div>
+                                <a href="{{ url('#') }}" class="menu-link">
+                                    <div data-i18n="Without menu">Semua Produk</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ url('layouts-without-navbar.html') }}" class="menu-link">
-                                    <div data-i18n="Without navbar">Without navbar</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('layouts-container.html') }}" class="menu-link">
-                                    <div data-i18n="Container">Container</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('layouts-fluid.html') }}" class="menu-link">
-                                    <div data-i18n="Fluid">Fluid</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('layouts-blank.html') }}" class="menu-link">
-                                    <div data-i18n="Blank">Blank</div>
+                                <a href="{{ url('#') }}" class="menu-link">
+                                    <div data-i18n="Without menu">Data Penjualan</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Pages</span>
+                        <span class="menu-header-text">Pengguna</span>
                     </li>
                     <li class="menu-item">
                         <a href="{{ url('javascript:void(0);') }}" class="menu-link menu-toggle">
@@ -167,18 +152,8 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ url('pages-account-settings-account.html') }}" class="menu-link">
-                                    <div data-i18n="Account">Account</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('pages-account-settings-notifications.html') }}" class="menu-link">
-                                    <div data-i18n="Notifications">Notifications</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('pages-account-settings-connections.html') }}" class="menu-link">
-                                    <div data-i18n="Connections">Connections</div>
+                                <a href="{{ url('#') }}" class="menu-link">
+                                    <div data-i18n="Settings">Pengaturan</div>
                                 </a>
                             </li>
                         </ul>
@@ -186,46 +161,22 @@
                     <li class="menu-item">
                         <a href="{{ url('javascript:void(0);') }}" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                            <div data-i18n="Authentications">Authentications</div>
+                            <div data-i18n="Users Manager">Users Manager</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ url('auth-login-basic.html') }}" class="menu-link" target="_blank">
-                                    <div data-i18n="Basic">Login</div>
+                                <a href="{{ url('#') }}" class="menu-link" target="_blank">
+                                    <div data-i18n="Users">Pengguna</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ url('auth-register-basic.html') }}" class="menu-link" target="_blank">
-                                    <div data-i18n="Basic">Register</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('auth-forgot-password-basic.html') }}" class="menu-link"
+                                <a href="{{ url('#') }}" class="menu-link"
                                     target="_blank">
-                                    <div data-i18n="Basic">Forgot Password</div>
+                                    <div data-i18n="Privacy Policy">Privacy Policy</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="{{ url('javascript:void(0);') }}" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                            <div data-i18n="Misc">Misc</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="{{ url('pages-misc-error.html') }}" class="menu-link">
-                                    <div data-i18n="Error">Error</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{{ url('pages-misc-under-maintenance.html') }}" class="menu-link">
-                                    <div data-i18n="Under Maintenance">Under Maintenance</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
                 </ul>
             </aside>
             <!-- / Menu -->
