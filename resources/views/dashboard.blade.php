@@ -1,17 +1,18 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
+@extends('admin.layouts.general');
+@section('content')
+    <!-- Content wrapper -->
+    <div class="content-wrapper">
+        <!-- Content -->
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+                @include('admin.components.widget.hero')
+                @include('admin.components.widget.revenue')
+                @include('admin.components.widget.report')
             </div>
         </div>
+        <!-- / Content -->
+        @include('admin.components.footer')
+        <div class="content-backdrop fade"></div>
     </div>
-</x-app-layout>
+    <!-- Content wrapper -->
+@endsection

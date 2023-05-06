@@ -60,10 +60,10 @@
                         <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ url('#') }}">
+                        <x-responsive-nav-link class="dropdown-item" :href="route('profile.edit')">
                             <i class="bx bx-user me-2"></i>
-                            <span class="align-middle">Profile Saya</span>
-                        </a>
+                            <span class="align-middle">{{ __('Profile') }}</span>
+                        </x-responsive-nav-link>
                     </li>
                     <li>
                         <a class="dropdown-item" href="{{ url('#') }}">
