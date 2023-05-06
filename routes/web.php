@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [UserController::class, "dashboard"])->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::group(["prefix" => "admin", "middleware" => ["auth", "verified", "role:admin"]], function($router){
+    $router->get('dashboard', [AdminController::class, "dashboard"])->name("admin.dashboard");
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
