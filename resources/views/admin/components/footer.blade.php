@@ -11,7 +11,9 @@
                 Indonesia</a>
         </div>
         <div>
-            <a href="#" class="footer-link me-4" target="_blank"> 1.0</a>
+            <a href="#" class="footer-link me-4" target="_blank">
+                Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+            </a>
         </div>
     </div>
 </footer>
