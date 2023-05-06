@@ -6,8 +6,7 @@
 
     <div class="mb-3">
         <label for="email" class="form-label">Email or Username</label>
-        <x-text-input type="text" class="form-control" id="email" type="email" name="email" :value="old('email')"
-            required autofocus autocomplete="username" placeholder="Enter your email or username" />
+        <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="Masukan email atau username" required autocomplete="email" autofocus />
         <x-input-error :messages="$errors->get('email')" class="mt-2" />
     </div>
     <div class="mb-3 form-password-toggle">
