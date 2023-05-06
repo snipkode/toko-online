@@ -100,8 +100,7 @@
                                 </g>
                             </svg>
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2"
-                            style="text-transform: capitalize">Toko Online</span>
+                        <span class="app-brand-text demo text-capitalize menu-text fw-bolder ms-2">Toko Online</span>
                     </a>
 
                     <a href="{{ url('javascript:void(0);') }}"
