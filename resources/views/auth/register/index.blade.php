@@ -22,7 +22,7 @@
                     @include('auth.register.form')
                     <p class="text-center">
                         <span>Sudah punya akun?</span>
-                        <a href="auth-login-basic.html">
+                        <a href="{{ route('login') }}">
                           <span>Masuk</span>
                         </a>
                     </p>
