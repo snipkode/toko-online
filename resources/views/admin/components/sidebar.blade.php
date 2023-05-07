@@ -69,12 +69,12 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{ url('#') }}" class="menu-link" target="_blank">
+                    <a href="{{ url('/users') }}" class="menu-link" target="_blank">
                         <div data-i18n="Users">Pengguna</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="{{ url('#') }}" class="menu-link" target="_blank">
+                    <a href="{{ url('/privacy') }}" class="menu-link" target="_blank">
                         <div data-i18n="Privacy Policy">Privacy Policy</div>
                     </a>
                 </li>

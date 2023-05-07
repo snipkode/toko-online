@@ -17,6 +17,7 @@
                                     <th scope="col">Kuantitas</th>
                                     <th scope="col">Harga</th>
                                     <th scope="col">Total</th>
+                                    <th scope="col">status</th>
                                     <th scope="col">Aksi</th>
                                 </tr>
                             </thead>
@@ -28,6 +29,7 @@
                                     <td>2</td>
                                     <td>Rp 120.000</td>
                                     <td>Rp 240.000</td>
+                                    <td>Pending</td>
                                     <td>
                                         <button class="btn btn-sm btn-warning">
                                             <i class='bx bxs-edit'></i>
@@ -45,6 +47,7 @@
                                   <td>2</td>
                                   <td>Rp 120.000</td>
                                   <td>Rp 240.000</td>
+                                  <td>Pending</td>
                                   <td>
                                       <button class="btn btn-sm btn-warning">
                                           <i class='bx bxs-edit'></i>
@@ -61,6 +64,7 @@
                                 <td>2</td>
                                 <td>Rp 120.000</td>
                                 <td>Rp 240.000</td>
+                                <td>Pending</td>
                                 <td>
                                     <button class="btn btn-sm btn-warning">
                                         <i class='bx bxs-edit'></i>
