@@ -9,43 +9,37 @@
                     <!-- Read/Update/Delete table -->
                     <table class="table table-striped table-hover table-responsive">
                         <thead>
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Customer Name</th>
-                            <th scope="col">Product Name</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Total</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nama Pembeli</th>
+                                <th scope="col">Nama Produk</th>
+                                <th scope="col">Kuantitas</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Aksi</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>John Doe</td>
-                            <td>Product A</td>
-                            <td>2</td>
-                            <td>$10.00</td>
-                            <td>$20.00</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jane Smith</td>
-                            <td>Product B</td>
-                            <td>1</td>
-                            <td>$15.00</td>
-                            <td>$15.00</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Bob Johnson</td>
-                            <td>Product C</td>
-                            <td>4</td>
-                            <td>$20.00</td>
-                            <td>$80.00</td>
-                          </tr>
-                          <!-- more rows here -->
+                            <tr>
+                                <th scope="row">#31221</th>
+                                <td>Alam Wibowo</td>
+                                <td>Product A</td>
+                                <td>2</td>
+                                <td>Rp 120.000</td>
+                                <td>Rp 240.000</td>
+                                <td>
+                                    <button class="btn btn-sm btn-warning">
+                                        <i class='bx bxs-edit'></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger">
+                                        <i class='bx bxs-trash'></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- more rows here -->
                         </tbody>
-                      </table>                      
+                    </table>
                 </div>
             </div>
         </div>
