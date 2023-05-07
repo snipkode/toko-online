@@ -9,45 +9,40 @@
                     <!-- Read/Update/Delete table -->
                     <div class="card px-3 py-4">
                         <div class="table-responsive">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped table-hover" id="table-perfect">
                                 <thead>
                                     <tr>
                                         <th>Nama</th>
                                         <th>Deskripsi</th>
+                                        <th>Link</th>
                                         <th>Kupon</th>
                                         <th>Harga</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Panduan Belajar HTML</td>
-                                        <td>Description of product 1</td>
-                                        <td>-</td>
-                                        <td>Rp 120.000</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-warning">
-                                                <i class='bx bxs-edit'></i>
-                                            </button>
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class='bx bxs-trash' ></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Menjadi Full Stack Javascript</td>
-                                        <td>Description of product 2</td>
-                                        <td>-</td>
-                                        <td>Rp 54.000</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-warning">
-                                                <i class='bx bxs-edit'></i>
-                                            </button>
-                                            <button class="btn btn-sm btn-danger">
-                                                <i class='bx bxs-trash' ></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                    @foreach ($hasil as $item)
+                                        <tr>
+                                            <td class="text-nowrap">{{ $item->name }}</td>
+                                            <td class="text-nowrap">{{ substr($item->description, 0, 40) . '...' }}</td>
+                                            <td class="text-nowrap">
+                                                <button class="btn btn-sm btn-primary"
+                                                    onclick="alert('{{ $item->link }}')">
+                                                    <i class='bx bxs-download'></i>
+                                                </button>
+                                            </td>
+                                            <td class="text-nowrap">{{ $item->coupon ? $item->coupon : 'No' }}</td>
+                                            <td class="text-nowrap">{{ idr_format($item->price) }}</td>
+                                            <td class="text-nowrap">
+                                                <button class="btn btn-sm btn-warning" onclick="alert({{ $item->id }})">
+                                                    <i class='bx bxs-edit'></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-danger">
+                                                    <i class='bx bxs-trash'></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                     <!-- More rows here -->
                                 </tbody>
                             </table>

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const verticalExample = document.getElementById('vertical-example'),
       horizontalExample = document.getElementById('horizontal-example'),
       horizVertExample = document.getElementById('both-scrollbars-example');
+      TablePerfect = document.getElementById('table-perfect');
 
     // Vertical Example
     // --------------------------------------------------------------------
@@ -31,6 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (horizVertExample) {
       new PerfectScrollbar(horizVertExample, {
         wheelPropagation: false
+      });
+    }
+    if (TablePerfect) {
+      new PerfectScrollbar(TablePerfect, {
+        wheelSpeed: 2,
+        wheelPropagation: true,
+        minScrollbarLength: 20,
+        suppressScrollX: true,
+        theme: 'red' // Change the scrollbar color to red
       });
     }
   })();

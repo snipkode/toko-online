@@ -22,7 +22,7 @@ Route::get('/dashboard', [UserController::class, "dashboard"])->middleware(['aut
 
 Route::group(["prefix" => "admin", "middleware" => ["auth", "verified", "role:admin"]], function($router){
     $router->get('dashboard', [AdminController::class, "dashboard"])->name("admin.dashboard");
-    $router->get('produk', [AdminController::class, "produk"])->name("admin.produk");
+    $router->get('produk', [ProductController::class, "index"])->name("admin.produk");
     $router->get('sales', [AdminController::class, "sales"])->name("admin.sales");
 });
 
