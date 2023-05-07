@@ -7,49 +7,51 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- Read/Update/Delete table -->
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Nama</th>
-                                    <th>Deskripsi</th>
-                                    <th>Kupon</th>
-                                    <th>Harga</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Panduan Belajar HTML</td>
-                                    <td>Description of product 1</td>
-                                    <td>-</td>
-                                    <td>Rp 120.000</td>
-                                    <td>
-                                        <button class="btn btn-sm btn-warning">
-                                            <i class='bx bxs-edit'></i>
-                                        </button>
-                                        <button class="btn btn-sm btn-danger">
-                                            <i class='bx bxs-trash' ></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Menjadi Full Stack Javascript</td>
-                                    <td>Description of product 2</td>
-                                    <td>-</td>
-                                    <td>Rp 54.000</td>
-                                    <td>
-                                        <button class="btn btn-sm btn-warning">
-                                            <i class='bx bxs-edit'></i>
-                                        </button>
-                                        <button class="btn btn-sm btn-danger">
-                                            <i class='bx bxs-trash' ></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <!-- More rows here -->
-                            </tbody>
-                        </table>
+                    <div class="card px-3 py-4">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>Deskripsi</th>
+                                        <th>Kupon</th>
+                                        <th>Harga</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Panduan Belajar HTML</td>
+                                        <td>Description of product 1</td>
+                                        <td>-</td>
+                                        <td>Rp 120.000</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-warning">
+                                                <i class='bx bxs-edit'></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-danger">
+                                                <i class='bx bxs-trash' ></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Menjadi Full Stack Javascript</td>
+                                        <td>Description of product 2</td>
+                                        <td>-</td>
+                                        <td>Rp 54.000</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-warning">
+                                                <i class='bx bxs-edit'></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-danger">
+                                                <i class='bx bxs-trash' ></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <!-- More rows here -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
