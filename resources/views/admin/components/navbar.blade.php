@@ -62,7 +62,7 @@
                     <li>
                         <x-responsive-nav-link class="dropdown-item" :href="route('profile.edit')">
                             <i class="bx bx-user me-2"></i>
-                            <span class="align-middle">{{ __('Profile') }}</span>
+                            <span class="align-middle">{{ __('Profile Saya') }}</span>
                         </x-responsive-nav-link>
                     </li>
                     <li>
