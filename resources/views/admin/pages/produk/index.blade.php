@@ -23,7 +23,7 @@
                                 <tbody>
                                     @foreach ($hasil as $item)
                                         <tr>
-                                            <td class="text-nowrap">{{ $item->name }}</td>
+                                            <td class="text-nowrap">{{ $item->product_name }}</td>
                                             <td class="text-nowrap">{{ substr($item->description, 0, 40) . '...' }}</td>
                                             <td class="text-nowrap">
                                                 <button class="btn btn-sm btn-primary"
@@ -31,10 +31,10 @@
                                                     <i class='bx bxs-download'></i>
                                                 </button>
                                             </td>
-                                            <td class="text-nowrap">{{ $item->coupon ? $item->coupon : 'No' }}</td>
-                                            <td class="text-nowrap">{{ idr_format($item->price) }}</td>
+                                            <td class="text-nowrap">{{ $item->kode ? $item->kode : 'No' }}</td>
+                                            <td class="text-nowrap">{{ idr_format($item->harga) }}</td>
                                             <td class="text-nowrap">
-                                                <button class="btn btn-sm btn-warning" onclick="alert({{ $item->id }})">
+                                                <button class="btn btn-sm btn-warning" onclick="alert({{ $item->product_id }})">
                                                     <i class='bx bxs-edit'></i>
                                                 </button>
                                                 <button class="btn btn-sm btn-danger">
