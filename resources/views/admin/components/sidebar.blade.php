@@ -56,8 +56,8 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{ url('#') }}" class="menu-link">
-                        <div data-i18n="Settings">Pengaturan</div>
+                    <a href="{{ route('profile.edit') }}" class="menu-link">
+                        <div data-i18n="Settings">Profile Saya</div>
                     </a>
                 </li>
             </ul>
