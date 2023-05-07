@@ -20,7 +20,10 @@
             </ul>
             <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Keranjang</a>
+                    <a class="nav-link" href="#">Keranjang 
+                        <span class="badge badge-center bg-label-danger">0</span>
+                    </a>
+                    
                 </li>
                 @if (Route::has('login'))
                     @auth
