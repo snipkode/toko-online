@@ -5,7 +5,7 @@
             <span class="app-brand-logo demo">
                 <x-app-logo/>
             </span>
-            <span class="app-brand-text demo text-capitalize menu-text fw-bolder ms-2">Toko Online</span>
+            <span class="app-brand-text demo text-capitalize menu-text fw-bolder ms-2">{{ config('app.name', 'Toko Online') }}</span>
         </a>
 
         <a href="{{ url('javascript:void(0);') }}"
