@@ -34,12 +34,12 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{ url('#') }}" class="menu-link">
+                    <a href="{{ route('admin.produk') }}" class="menu-link">
                         <div data-i18n="Without menu">Semua Produk</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="{{ url('#') }}" class="menu-link">
+                    <a href="{{ route('admin.sales') }}" class="menu-link">
                         <div data-i18n="Without menu">Data Penjualan</div>
                     </a>
                 </li>
